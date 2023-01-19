@@ -6,7 +6,7 @@ const CronJob = require('cron').CronJob;
 
 bot.start((ctx)=>{
     
-    const job = new CronJob('0/15 * * * * *',function() {
+    const job = new CronJob('0 24 * * * *',function() {
         ctx.replyWithDocument({source:'./file/frontend.pdf'})
         },
         null,
